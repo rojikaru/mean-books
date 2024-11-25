@@ -24,7 +24,10 @@ export class BooksComponent implements OnInit {
     this.bookService.getBooks()
       .subscribe({
         next: (books) => this.books = books,
-        error: (error) => console.error('Error loading books:', error),
+        error: (error) => {
+          console.error('Error loading books:', error)
+          this.books = [];
+        },
       })
   }
 
