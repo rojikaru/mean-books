@@ -10,7 +10,6 @@ import Book from '@/types/book.interface';
   imports: [
     FormsModule,
   ],
-  styleUrls: ['./create-book.component.css'],
 })
 export class CreateBookComponent {
   book: Omit<Book, '_id'> = {

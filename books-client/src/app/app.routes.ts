@@ -7,28 +7,32 @@ import {EditBookComponent} from '@/components/edit-book/edit-book.component';
 
 export const routes: Routes = [
   {
-    "path": "",
-    "title": "Home",
-    "component": HomeComponent,
+    path: '',
+    title: 'Home',
+    component: HomeComponent,
   },
   {
-    "path": "books",
-    "title": "Books",
-    "component": BooksComponent,
+    path: 'books',
+    title: 'Books',
+    component: BooksComponent,
+    pathMatch: 'full',
   },
   {
-    "path": "books/:id",
-    "title": "Book Details",
-    "component": BookComponent,
+    path: 'books/create',
+    title: 'Add Book',
+    component: CreateBookComponent,
+    pathMatch: 'full',
   },
   {
-    "path": "books/new",
-    "title": "Add Book",
-    "component": CreateBookComponent,
+    path: 'books/:id',
+    title: 'Book Details',
+    component: BookComponent,
+    pathMatch: 'full',
   },
   {
-    "path": "books/:id/edit",
-    "title": "Edit Book",
-    "component": EditBookComponent,
+    path: 'books/:id/edit',
+    title: 'Edit Book',
+    component: EditBookComponent,
+    pathMatch: 'full',
   },
 ];

@@ -11,7 +11,6 @@ import Book from '@/types/book.interface';
     NgIf,
     RouterLink,
   ],
-  styleUrls: ['./book.component.css'],
 })
 export class BookComponent implements OnInit {
   book: Book | null = null;

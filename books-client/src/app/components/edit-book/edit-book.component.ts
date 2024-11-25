@@ -8,7 +8,6 @@ import Book from '@/types/book.interface';
 @Component({
   selector: 'app-edit-book',
   templateUrl: './edit-book.component.html',
-  styleUrls: ['./edit-book.component.css'],
   imports: [
     FormsModule,
     NgIf,

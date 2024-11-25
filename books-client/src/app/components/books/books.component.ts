@@ -7,7 +7,6 @@ import Book from '@/types/book.interface';
 @Component({
   selector: 'app-books',
   templateUrl: './books.component.html',
-  styleUrls: ['./books.component.css'],
   imports: [
     RouterLink,
     NgForOf,

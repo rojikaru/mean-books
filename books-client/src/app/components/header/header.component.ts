@@ -9,7 +9,6 @@ import {NgForOf} from '@angular/common';
     NgForOf,
   ],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
 })
 export class HeaderComponent {
   public links = [
