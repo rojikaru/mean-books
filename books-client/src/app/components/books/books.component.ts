@@ -12,7 +12,7 @@ import Book from '@/types/book.interface';
   ],
 })
 export class BooksComponent implements OnInit {
-  books: Book[] = [];
+  books: Book[] | null = null;
 
   constructor(private bookService: BookService) { }
 
