@@ -6,7 +6,7 @@ import handleError from "./middleware/error.js";
 
 async function main() {
     const app = express();
-    const port = +process.env.PORT ?? 80;
+    const port = +process.env.PORT ?? 3000;
 
     // Middleware
     app.use(cors({
