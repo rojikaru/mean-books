@@ -1,9 +1,9 @@
 import {Routes} from '@angular/router';
-import {HomeComponent} from './home/home.component';
-import {BooksComponent} from './books/books.component';
-import {BookComponent} from './book/book.component';
-import {CreateBookComponent} from './create-book/create-book.component';
-import {EditBookComponent} from './edit-book/edit-book.component';
+import {HomeComponent} from '@/components/home/home.component';
+import {BooksComponent} from '@/components/books/books.component';
+import {BookComponent} from '@/components/book/book.component';
+import {CreateBookComponent} from '@/components/create-book/create-book.component';
+import {EditBookComponent} from '@/components/edit-book/edit-book.component';
 
 export const routes: Routes = [
   {
