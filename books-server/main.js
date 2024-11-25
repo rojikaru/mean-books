@@ -1,6 +1,6 @@
 import express from 'express';
-import bookRouter from "./routers/book/book-router.js";
-import catchAllRouter from "./routers/error/catch-all-router.js";
+import bookRouter from "./routers/book.js";
+import catchAllRouter from "./routers/catch-all.js";
 
 async function main() {
     const app = express();
