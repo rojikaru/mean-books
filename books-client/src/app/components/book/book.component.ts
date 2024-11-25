@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
+import {NgIf} from '@angular/common';
 import {ActivatedRoute, RouterLink} from '@angular/router';
 import {BookService} from '@/services/book.service';
 import Book from '@/types/book.interface';
-import {NgIf} from '@angular/common';
 
 @Component({
   selector: 'app-book',
@@ -23,9 +23,8 @@ export class BookComponent implements OnInit {
 
   ngOnInit() {
     const id = this.route.snapshot.paramMap.get('id');
-    if (!id) {
-      return;
-    }
+    if (!id) return;
+
     this.bookService.getBook(id)
       .subscribe({
         next: book => this.book = book,
