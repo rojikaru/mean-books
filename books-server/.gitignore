@@ -17,3 +17,9 @@ benchmarks/graphs
 
 # Visual Studio Code
 .vscode
+
+# Secrets
+.env
+
+# Mac
+.DS_Store
