@@ -1,0 +1,3 @@
+.min-h-screen {
+  min-height: calc(100vh - 64px); /* Adjust this value based on your header height */
+}

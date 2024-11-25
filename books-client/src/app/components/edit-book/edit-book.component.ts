@@ -1,16 +1,15 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {FormsModule} from '@angular/forms';
-import {NgIf} from '@angular/common';
 import {BookService} from '@/services/book.service';
 import Book from '@/types/book.interface';
 
 @Component({
   selector: 'app-edit-book',
+  standalone: true,
   templateUrl: './edit-book.component.html',
   imports: [
     FormsModule,
-    NgIf,
   ],
 })
 export class EditBookComponent implements OnInit {

@@ -1,15 +1,14 @@
 import {Component, OnInit} from '@angular/core';
 import {RouterLink} from '@angular/router';
-import {NgForOf} from '@angular/common';
 import {BookService} from '@/services/book.service';
 import Book from '@/types/book.interface';
 
 @Component({
   selector: 'app-books',
+  standalone: true,
   templateUrl: './books.component.html',
   imports: [
     RouterLink,
-    NgForOf,
   ],
 })
 export class BooksComponent implements OnInit {
