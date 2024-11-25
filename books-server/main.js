@@ -4,7 +4,7 @@ import catchAllRouter from "./routers/error/catch-all-router.js";
 
 async function main() {
     const app = express();
-    const port = 4000;
+    const port = 3000;
 
     app.use(express.json());
     app.use(express.urlencoded({extended: true}));

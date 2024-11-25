@@ -8,7 +8,7 @@ This is a simple express app that allows you to add, delete, and update books. I
 2. Clone the repository
 3. Run `npm install`
 4. Run `npm start` (or `npm run dev` if you want to use watch mode)
-5. Open your browser and go to `http://localhost:4000` (or tweak the port in the `main.js` file)
+5. Open your browser and go to `http://localhost:3000` (or tweak the port in the `main.js` file)
 
 ## Usage
 1. Use with Postman or any other API testing tool
