@@ -1,0 +1,17 @@
+<div class="container mx-auto p-4">
+  <h2 class="text-3xl font-bold mb-4">Books</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div *ngFor="let book of books" class="border p-4 rounded">
+      <h3 class="text-xl font-semibold mb-2">{{ book.name }}</h3>
+      <p><strong>Author:</strong> {{ book.author }}</p>
+      <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+      <p><strong>Pages:</strong> {{ book.pages }}</p>
+      <div class="mt-4">
+        <a [routerLink]="['/books', book._id]" class="bg-blue-500 text-white px-3 py-1 rounded mr-2">View</a>
+        <a [routerLink]="['/books', book._id, 'edit']" class="bg-green-500 text-white px-3 py-1 rounded mr-2">Edit</a>
+        <button (click)="deleteBook(book._id)" class="bg-red-500 text-white px-3 py-1 rounded">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
