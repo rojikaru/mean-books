@@ -1,10 +1,14 @@
 <header class="bg-blue-600 text-white p-4">
   <nav class="container mx-auto flex justify-between items-center">
-    <h1 class="text-2xl font-bold">Book App</h1>
-    <ul class="flex space-x-4">
-      <li *ngFor="let link of links">
-        <a [routerLink]="link.path" class="hover:underline">{{ link.name }}</a>
-      </li>
+    <h1 class="text-2xl font-bold">
+      <a routerLink="/" class="hover:underline">Books</a>
+    </h1>
+    <ul class="flex flex-row gap-4 list-style-none space-x-4">
+      @for (link of links; track link.name) {
+        <li>
+          <a href="{{ link.path }}" class="hover:underline">{{ link.name }}</a>
+        </li>
+      }
     </ul>
   </nav>
 </header>

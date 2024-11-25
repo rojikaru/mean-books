@@ -7,28 +7,28 @@ import Book from '@/types/book.interface';
   providedIn: 'root'
 })
 export class BookService {
-  private apiUrl = process.env['API_URL'] ?? 'http://localhost:3000/api';
+  private apiUrl = 'http://localhost:3000/api';
 
   constructor(private http: HttpClient) {}
 
   getBooks(): Observable<Book[]> {
-    return this.http.get<Book[]>(`${this.apiUrl}/books`);
+    return this.http.get<Book[]>(`${this.apiUrl}/book`);
   }
 
   getBook(id: string): Observable<Book> {
-    return this.http.get<Book>(`${this.apiUrl}/books/${id}`);
+    return this.http.get<Book>(`${this.apiUrl}/book/${id}`);
   }
 
   createBook(book: Omit<Book, '_id'>): Observable<Book> {
-    return this.http.post<Book>(`${this.apiUrl}/books`, book);
+    return this.http.post<Book>(`${this.apiUrl}/book`, book);
   }
 
   updateBook(id: string, book: Partial<Book>): Observable<Book> {
-    return this.http.put<Book>(`${this.apiUrl}/books/${id}`, book);
+    return this.http.put<Book>(`${this.apiUrl}/book/${id}`, book);
   }
 
   deleteBook(id: string): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/books/${id}`);
+    return this.http.delete<void>(`${this.apiUrl}/book/${id}`);
   }
 }
 

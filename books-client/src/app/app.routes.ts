@@ -4,35 +4,38 @@ import {BooksComponent} from '@/components/books/books.component';
 import {BookComponent} from '@/components/book/book.component';
 import {CreateBookComponent} from '@/components/create-book/create-book.component';
 import {EditBookComponent} from '@/components/edit-book/edit-book.component';
+import {NotFoundComponent} from '@/components/not-found/not-found.component';
 
 export const routes: Routes = [
   {
-    path: '',
     title: 'Home',
     component: HomeComponent,
+    path: '',
   },
   {
-    path: 'books',
     title: 'Books',
     component: BooksComponent,
-    pathMatch: 'full',
+    path: 'books',
   },
   {
-    path: 'books/create',
-    title: 'Add Book',
-    component: CreateBookComponent,
-    pathMatch: 'full',
-  },
-  {
-    path: 'books/:id',
-    title: 'Book Details',
+    title: 'Book',
     component: BookComponent,
+    path: 'book/:id',
+  },
+  {
+    title: 'Create Book',
+    component: CreateBookComponent,
+    path: 'books/create',
     pathMatch: 'full',
   },
   {
-    path: 'books/:id/edit',
     title: 'Edit Book',
     component: EditBookComponent,
-    pathMatch: 'full',
+    path: 'book/:id/edit',
   },
+  {
+    title: '404',
+    component: NotFoundComponent,
+    path: '**',
+  }
 ];
