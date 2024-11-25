@@ -4,9 +4,9 @@ This is a simple app that allows you to manage your books. You can add, edit, de
 It is a simple CRUD app that uses a REST API to communicate with the server.
 
 ## Technologies used
-- MongoDB
-- Express
-- Angular
+- MongoDB (with mongoose ODM and Atlas)
+- Express (with JavaScript)
+- Angular (with TypeScript)
 - Node.js
 
 ## How to run the app
